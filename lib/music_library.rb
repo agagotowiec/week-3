@@ -14,7 +14,7 @@ class MusicLibrary
   
   def search_by_title(keyword) 
     @tracks.select do |track|
-    match = track.title.include?(keyword)
+    track.title.include?(keyword)
   end
 end
 end
